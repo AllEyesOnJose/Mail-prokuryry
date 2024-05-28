@@ -15,7 +15,8 @@
             align="center"
           >
             <tr>
-              <td>
+              <td style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="kuryrLogo.png" alt="">
                 <p style="font-size: 1.3rem">Pomáháme kurýrům!</p>
               </td>
             </tr>
@@ -35,7 +36,7 @@
             </tr>
             <tr>
               <td>
-                <h2 style="margin-top: 0px; font-size: 1.5rem">Nadpis</h2>
+                <h2 style="margin-top: 0px; font-size: 1.4rem">Nadpis</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
                   expedita officiis eligendi.
@@ -43,8 +44,8 @@
               </td>
             </tr>
             <tr>
-              <td>
-                <h2 style="margin-top: 0px; font-size: 1.5rem">
+              <td style = "display: flex; flex-direction: column;">
+                <h2 style="margin-top: 0px; font-size: 1.4rem">
                   Potřebujete se na něco zeptat?
                 </h2>
                 <p>
@@ -52,6 +53,9 @@
                   <a href="mailto:prace@prokuryry">prace@prokuryry.cz</a>.
                 </p>
                 <p>Těšíme se na spolupráci a Vaše případné dotazy!</p>
+                <img src="map.png" style="width: 100%;">
+                
+              </img>
                 <a
                   href="https://prokuryry.cz/kontakt/"
                   style="
@@ -59,10 +63,11 @@
                     background-color: #15d076;
                     color: white;
                     text-decoration: none;
-                    padding: 12px 25px;
+                    padding: 10px 20px;
                     border-radius: 10px;
                     font-size: 1.2rem;
                     text-transform: capitalize;
+                    margin-inline:auto;
                   "
                   >kontaktujte nás</a
                 >
@@ -73,4 +78,21 @@
       </tr>
     </table>
   </body>
+  <style>
+    tbody{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      width: 100%;
+    }
+    tr{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    td{
+      width: 100%;
+    }
+  </style>
 </html>
