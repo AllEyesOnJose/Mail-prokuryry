@@ -1,69 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            font-family: "Nunito", sans-serif;
-        }
-        header{
-            height: 80px;
-            border-bottom: 1px #15D076 solid;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header>p{
-            font-size: 1.3rem;
-        }
-        main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        img{
-            height: 70px;
-        }
-        section{
-            border-bottom: 1px black solid;
-            width: 100%;
-            gap: 20px;
-        }
-
-        p{
-            font-size: 1rem;
-            line-height: 1.4rem;
-        }
-    </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="https://www.prokuryry.cz/">
-            <img src="kuryrLogo.png" alt="">
-        </a>
-        <p>Pomáháme kurýrům!</p>
+      <a href="https://www.prokuryry.cz/">
+        <img src="kuryrLogo.png" alt="" />
+      </a>
+      <p>Pomáháme kurýrům!</p>
     </header>
     <main>
-        <section>
-            <p>Dobrý den,</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint molestias fugit ullam sapiente consectetur vel excepturi nemo obcaecati quia?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, vitae.</p>
-       
-        </section>
-        <section>
-            <h2>Nadpis</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita officiis eligendi.</p>
-        </section>
+      <section>
+        <p>Dobrý den,</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint
+          molestias fugit ullam sapiente consectetur vel excepturi nemo
+          obcaecati quia?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, vitae.
+        </p>
+      </section>
+      <section>
+        <h2>Nadpis</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita
+          officiis eligendi.
+        </p>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h2>Potřebujete se na něco zeptat?</h2>
 
-    
-</body>
+      <p>
+        Kdykoliv jsme Vám k dispozici na e-mailu
+        <a href="mailto:prace@prokuryry">prace@prokuryry.cz</a>.
+      </p>
+
+      <p>Těšíme se na spolupráci a Vaše případné dotazy!</p>
+
+      <button onclick="location.href=`https://prokuryry.cz/kontakt/`">
+        kontaktujte nás
+      </button>
+    </footer>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Nunito", sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      height: 80px;
+      border-bottom: 1px #15d076 solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header > p {
+      font-size: 1.3rem;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    img {
+      height: 70px;
+    }
+    section {
+      border-bottom: 1px black solid;
+      width: 100%;
+      gap: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+
+    h2 {
+      margin-top: 0px;
+      font-size: 1.5rem;
+    }
+    button {
+      border: none;
+      background-color: #15d076;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      color: white;
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      border-bottom: 1px black solid;
+      padding-bottom: 40px;
+    }
+  </style>
 </html>
