@@ -14,13 +14,13 @@
             border="0"
             align="center"
           >
-            <tr>
+            <tr class="header">
               <td style="display: flex; justify-content: space-between; align-items: center;">
                 <img src="kuryrLogo.png" alt="">
                 <p style="font-size: 1.3rem">Pomáháme kurýrům!</p>
               </td>
-            </tr>
-            <tr>
+            </tr style>
+            <tr class="section">
               <td>
                 <p>Dobrý den,</p>
                 <p>
@@ -34,16 +34,19 @@
                 </p>
               </td>
             </tr>
-            <tr>
+            <tr class="section">
               <td>
                 <h2 style="margin-top: 0px; font-size: 1.4rem">Nadpis</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
                   expedita officiis eligendi.
                 </p>
+                <img src="map.png" style="width: 100%;">
+                
+              </img>
               </td>
             </tr>
-            <tr>
+            <tr class="footer">
               <td style = "display: flex; flex-direction: column;">
                 <h2 style="margin-top: 0px; font-size: 1.4rem">
                   Potřebujete se na něco zeptat?
@@ -53,9 +56,7 @@
                   <a href="mailto:prace@prokuryry">prace@prokuryry.cz</a>.
                 </p>
                 <p>Těšíme se na spolupráci a Vaše případné dotazy!</p>
-                <img src="map.png" style="width: 100%;">
                 
-              </img>
                 <a
                   href="https://prokuryry.cz/kontakt/"
                   style="
@@ -94,5 +95,20 @@
     td{
       width: 100%;
     }
+    .section:nth-child(2){
+      border-bottom: 1px black solid;
+    }
+    .header{
+      border-bottom: 1px black solid;
+    }
+    .footer{
+      border-bottom: 1px black solid;
+      padding-bottom: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+    table{
+    width: 90%;
+  }
+}
   </style>
 </html>
