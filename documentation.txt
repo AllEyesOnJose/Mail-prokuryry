@@ -7,9 +7,36 @@ Odstavce
 Odstavce jsou označené tagem <p></p>. Každý odstavec musí být individuálně napsán v tomto tagu. Např.: 
 <p>Dobrý den,</p> 
 <p>obsah</p>
-
+Sekce jsou označeny třidou section. Pokuď chcete vytvořit novou sekci zkopírujte tento kód, obsah jako jsou nadpisy a text vkládáte do tagu <td>:
+<tr class="section" style="border-bottom: 1px black solid">
+              <td>
+                <h2 style="margin-top: 0px; font-size: 1.4rem">Nadpis 1</h2>
+                <p>
+                  Zpráva 3
+                </p>
+              </td>
+            </tr>
+<
 Tlačítka
-Tlačítka jsou označené tagem <button></button>. Odkazy do nich vložíte v tomto formátu: <button onclick=”location.href=’https://prokuryry.cz/’”>Stránky</button>
+Tlačítka jsou označeny třídou button. Pokuď chcete tlačítko použít někde na stránce tak zkopírujte tento kód, změňte odkaz v href na vámi zvolený a vložte ho do stránky:
+<tr class="button">
+    <td style="text-align: center;">
+        <a
+        href="https://prokuryry.cz/kontakt/"
+        style="
+        display: inline-block;
+        background-color: #15d076;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        margin-inline: auto;
+        "
+        >Text tlačítka</a>
+    </td>
+</tr>
 
 Odkazy
 Textové odkazy jsou označené tagem <a></a>. Vyplněný vypadá poté takto:
