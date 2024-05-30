@@ -16,7 +16,6 @@ Sekce jsou označeny třidou section. Pokuď chcete vytvořit novou sekci zkopí
                 </p>
               </td>
             </tr>
-<
 Tlačítka
 Tlačítka jsou označeny třídou button. Pokuď chcete tlačítko použít někde na stránce tak zkopírujte tento kód, změňte odkaz v href na vámi zvolený a vložte ho do stránky:
 <tr class="button">
